@@ -40,10 +40,10 @@
                         </Grid.RowDefinitions>
 
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Customer:" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Order.CustomerName}" Margin="0,0,0,10"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Order.Customer.Name}" Margin="0,0,0,10"/>
 
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Email:" FontWeight="Bold" Margin="0,0,0,10"/>
-                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Order.CustomerEmail}" Margin="0,0,0,10"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Order.Customer.Email}" Margin="0,0,0,10"/>
 
                         <TextBlock Grid.Row="2" Grid.Column="0" Text="Created Date:" FontWeight="Bold" Margin="0,0,0,10"/>
                         <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Order.CreatedAtUtc, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}" Margin="0,0,0,10"/>
@@ -59,7 +59,7 @@
                 <!-- Order Items -->
                 <TextBlock Text="Order Items" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
                 <Border BorderBrush="#CCCCCC" BorderThickness="1">
-                    <DataGrid ItemsSource="{Binding Order.Items}"
+                    <DataGrid ItemsSource="{Binding Order.OrderItems}"
                               AutoGenerateColumns="False"
                               IsReadOnly="True"
                               GridLinesVisibility="Horizontal"
@@ -69,8 +69,8 @@
                             <DataGridTextColumn Header="Product SKU" Binding="{Binding ProductSku}" Width="120"/>
                             <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" Width="*"/>
                             <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="80"/>
-                            <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat='C2'}" Width="100"/>
-                            <DataGridTextColumn Header="Total" Binding="{Binding Total, StringFormat='C2'}" Width="100"/>
+                            <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice, StringFormat='€#,##0.00'}" Width="100"/>
+                            <DataGridTextColumn Header="Total" Binding="{Binding LineTotal, StringFormat='€#,##0.00'}" Width="100"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Border>
@@ -79,7 +79,7 @@
                 <Border BorderBrush="#CCCCCC" BorderThickness="1,0,1,1" Padding="10" Background="#F5F5F5">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                         <TextBlock Text="Total Amount:" FontSize="16" FontWeight="Bold" Margin="0,0,10,0"/>
-                        <TextBlock Text="{Binding Order.TotalAmount, StringFormat='C2'}" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Order.TotalAmount, StringFormat='€#,##0.00'}" FontSize="16" FontWeight="Bold"/>
                     </StackPanel>
                 </Border>
 

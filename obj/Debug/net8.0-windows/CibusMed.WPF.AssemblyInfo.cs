@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CibusMed.WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bef8b1be2666779c9f5631797600c8da587c279f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CibusMed.WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CibusMed.WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

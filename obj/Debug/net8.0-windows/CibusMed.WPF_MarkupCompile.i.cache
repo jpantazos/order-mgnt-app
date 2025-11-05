@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\pantazos\Desktop\CibusMed.WPF\obj\Debug\net8.0-windows\
+C:\Users\pantazos\source\repos\order-mgnt-app\obj\Debug\net8.0-windows\
 CibusMed.WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\pantazos\Desktop\CibusMed.WPF\App.xaml
+C:\Users\pantazos\source\repos\order-mgnt-app\App.xaml
 2-427628467
 
 14-1322477757
-358-1266537228
+359-672258163
 MainWindow.xaml;OrderDetailsWindow.xaml;
 
 False

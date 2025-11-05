@@ -101,10 +101,11 @@
                               MouseDoubleClick="DataGrid_MouseDoubleClick">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Order #" Binding="{Binding Id}" Width="80"/>
-                            <DataGridTextColumn Header="Customer" Binding="{Binding CustomerName}" Width="*"/>
+                            <DataGridTextColumn Header="Customer" Binding="{Binding CustomerName}" Width="150"/>
+                            <DataGridTextColumn Header="Products" Binding="{Binding ProductNames}" Width="*"/>
                             <DataGridTextColumn Header="Created Date" Binding="{Binding CreatedAtUtc, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}" Width="150"/>
                             <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
-                            <DataGridTextColumn Header="Total Amount" Binding="{Binding TotalAmount, StringFormat='C2'}" Width="120"/>
+                            <DataGridTextColumn Header="Total Amount" Binding="{Binding TotalAmount, StringFormat='€#,##0.00'}" Width="120"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
